@@ -1,0 +1,27 @@
+{
+	"name": "puppeteer-mcp",
+	"version": "1.0.0",
+	"description": "A Model Context Protocol (MCP) server that enables Cursor AI to fetch and analyze web page content using Puppeteer. Perfect for frontend development workflows where you need to inspect rendered HTML, debug components, or analyze live websites.",
+	"license": "ISC",
+	"author": "christophe77",
+	"type": "commonjs",
+	"main": "dist/puppeteer-mcp.js",
+	"scripts": {
+		"build": "tsc",
+		"build:watch": "tsc --watch",
+		"start": "node dist/puppeteer-mcp.js",
+		"dev": "tsc --watch & node dist/puppeteer-mcp.js",
+		"fetch": "node fetch-web.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.17.5",
+		"puppeteer": "^24.19.0",
+		"zod": "^3.25.76"
+	},
+	"devDependencies": {
+		"@types/node": "^24.3.1",
+		"@types/puppeteer": "^5.4.7",
+		"typescript": "^5.9.2"
+	}
+}
